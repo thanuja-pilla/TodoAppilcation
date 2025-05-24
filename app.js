@@ -1,4 +1,4 @@
-let todos = [];
+todos = [];
 
 function addTodo() {
     const input = document.getElementById('todo-input');
@@ -12,7 +12,7 @@ function addTodo() {
 function renderTodos() {
     const list = document.getElementById('todo-list');
     list.innerHTML = '';
-    todos.forEach((todo,index) => {
+    todos.forEach((todo,indexl) => {
         const listItem = document.createElement('li');
         listItem.textContent = todo;
         list.appendChild(listItem);
